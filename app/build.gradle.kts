@@ -58,5 +58,5 @@ dependencies {
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
     implementation("com.google.android.exoplayer:exoplayer:2.19.1")
     implementation("com.google.android.exoplayer:exoplayer-ui:2.19.1")
-    implementation("com.github.luben:zstd-jni:1.5.7-13")
+    implementation("com.github.luben:zippy:1.0.0")
 }
