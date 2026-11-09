@@ -1,79 +1,26 @@
 package com.example.pornstream.ui
-import androidx.assistant.ui.screens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerscreens
-import androidx.assistant.ui.screens.playerscreens.playerscreens
-import androidx.assistant.ui.screens.playerscreens.screens.player
-import androidx.assistant.ui.screens.playerscreens.screens.playerScreen
-import androidx.assistant.screens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.screens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.screens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.screens.player.playerScreen
-import androidx.assistant.ui.screens.screens.player.playerScreen
-import androidx.assistant.ui.screens.screens.player.playerScreen
-import androidx.assistant.ui.screens.screens.player.playerScreen
-import androidx.assistant.ui.screens.screens.player.playerScreen
-import androidx.assistant.ui.screens.screens.player.playerScreen
-import androidx.assistant.ui.screens.screens.player.playerScreen
-import androidx.assistant.ui.screens.screens.player.playerScreen
-import androidx.assistant.screens.screens.screens.player.playerScreen
-import androidx.assistant.screens.screens.screens.player.playerScreen
-import androidx.assistant.screens.screens.screens.player.playerScreen
-import androidx.assistant.screens.screens.screens.player.playerScreen
-import androidx.assistant.screens.screens.screens.player.playerScreen
-import androidx.assistant.screens.screens.screens.player.playerScreen
-import androidx.assistant.screens.screens.screens.player.playerScreen
-import androidx.assistant.screens.screens.screens.player.playerScreen
-import androidx.assistant.screens.screens.screens.player.player
-import androidx.assistant.screens.screens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.screens.playerscreens.playerScreen
-import androidx.assistant.ui.screens.playerscreens.playerScreenimport androidx.assistant.ui.screens.playerscreens.playerScreenimport
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.ui.Modifier
+import com.example.pornstream.ui.ui.theme.UiAppTheme
+
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            UiAppTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    // Your app content here
+                }
+            }
+        }
+    }
+}
