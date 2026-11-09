@@ -13,6 +13,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.pornstream.ui.ui.theme.UiAppTheme
@@ -36,6 +37,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ZipDemoScreen() {
+    val context = LocalContext.current
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -46,9 +48,9 @@ fun ZipDemoScreen() {
                 File.createTempFile("temp1", ".txt"),
                 File.createTempFile("temp2", ".txt")
             )
-            val success = ZipUtils.createZip(androidx.compose.ui.platform.LocalContext.current, "archive.zip", *files)
+            val success = ZipUtils.createZip(context, "archive.zip", *files)
             Toast.makeText(
-                androidx.compose.ui.platform.LocalContext.current,
+                context,
                 if (success) "Zip created successfully" else "Failed to create zip",
                 Toast.LENGTH_SHORT
             ).show()
