@@ -56,7 +56,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("com.google.android.exoplayer:exoplayer:2.21.1")
-    implementation("com.google.android.exoplayer:exoplayer-ui:2.21.1")
+    implementation("com.google.android.exoplayer:exoplayer:2.22.0")
+    implementation("com.google.android.exoplayer:exoplayer-ui:2.22.0")
     implementation("com.github.luben:zstd-jni:1.5.7-13")
 }
