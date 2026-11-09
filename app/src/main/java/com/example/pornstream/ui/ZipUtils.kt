@@ -3,6 +3,8 @@ package com.example.pornstream.ui
 import android.content.Context
 import net.lingala.zip4j.ZipFile
 import net.lingala.zip4j.model.ZipParameters
+import net.lingala.zip4j.model.enums.CompressionMethod
+import net.lingala.zip4j.model.enums.CompressionLevel
 import java.io.File
 
 object ZipUtils {
@@ -11,8 +13,8 @@ object ZipUtils {
             val outputFile = File(context.filesDir, outputFileName)
             val zipFile = ZipFile(outputFile)
             val zipParameters = ZipParameters()
-            zipParameters.compressionMethod = ZipParameters.COMP_STORE
-            zipParameters.compressionLevel = ZipParameters.DEFLATE_LEVEL_NORMAL
+            zipParameters.compressionMethod = CompressionMethod.STORE
+            zipParameters.compressionLevel = CompressionLevel.NORMAL
 
             for (file in files) {
                 zipFile.addFile(file, zipParameters)
